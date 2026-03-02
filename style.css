@@ -1,0 +1,63 @@
+.sla {
+    --stroke-color: rgba(243, 238, 238, 0.7) ;
+    --surface-color: rgba(255, 255, 255, 0.31) ;
+    --surface--color-hover: rgba(0, 0, 0, 0.02) ;
+    --highlight-color: rgba(255, 255, 255, 0.2) ;   
+}
+
+
+body {
+
+background-image: url(/assets/Aura\ Apparel\ -\ Standard.png)  ;
+
+}
+
+
+
+section {
+    background-color: var(--surface-color);
+    width: 1250px;
+    height: 500px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    
+}
+
+p {
+    font-family: "Erica One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(241, 234, 234, 0.781);
+}
+
+#bemv {
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    border-radius: 30px;
+    stroke: var(--stroke-color);
+    background-color:rgb(233, 222, 222);
+    hover:var(--surface--color-hover);
+
+}
+
+
