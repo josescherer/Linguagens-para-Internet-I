@@ -1,82 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
+<head>
 
-       
-        <title>exercicio implementação 3</title>
-        <meta charset="UTF-8">
-        
+    <title>exercicio implementação 3</title>
+    <meta charset="UTF-8">
 
-        <style>
-            .menu-v {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                width: 200px;
-                box-shadow: 2px 0 8px  rgba(0, 0, 0, 0.2);
-                background-color: #555966;
-            }
+    <style>
+        .menu-v {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+            background-color: #555966;
+        }
 
-            .menu-v li a {
-                display: block; 
-                padding: 16px 20px; 
-                color: #fafbff;
-                text-decoration: none; 
-                border-left: 4px solid transparent;
-                transition: all 0.3s;
-                
-            }
-            .menu-v li a:hover{
-                background: #175fcc;
-                border-left-color: #3b42a1;
-            }
+        .menu-v li {
+            position: relative;
+        }
 
-            .submenu {
-                display: none;
-                list-style-type: none;
-                position: absolute;
-                left: 205px;
-                top: 8px;
-                width: 200px;
-                background: #444;
-            }
+        .menu-v li a {
+            display: block;
+            padding: 16px 20px;
+            color: #fafbff;
+            text-decoration: none;
+            border-left: 4px solid transparent;
+            transition: all 0.3s;
+        }
 
-            .menu-v li:hover .submenu {
-                display: block;
-            }
-        
+        .menu-v li a:hover {
+            background: #175fcc;
+            border-left-color: #3b42a1;
+        }
 
-            
-        </style>
-    </head>
+        .submenu {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
 
-    <body>
-        <nav aria-label="menu lateral">
-            <ul class="menu-v">
-                <li>
-                    <a href="#">Menu</a>
+            position: absolute;
+            left: 200px;
+            top: 0;
 
-                    <ul class="submenu">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="produtos.html">Produtos</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="sobre.html">Sobre</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
+            width: 200px;
+            background: #444;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+        }
 
+        .submenu-2 {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
 
+            position: absolute;
+            left: 200px;
+            top: -50px;
 
+            width: 200px;
+            background: #333;
+            box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+        }
 
+        .menu-v li:hover > .submenu {
+            display: block;
+        }
 
+        .submenu li:hover > .submenu-2 {
+            display: block;
+        }
 
-    </body>
+    </style>
+</head>
+
+<body>
+    <nav aria-label="menu lateral">
+        <ul class="menu-v">
+
+            <li>
+                <a href="#">Menu</a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Produtos</a>
+
+                        <ul class="submenu-2">
+                            <li>
+                                <a href="#">Eletrônicos</a>
+                            </li>
+                            <li>
+                                <a href="#">Roupas</a>
+                            </li>
+                            <li>
+                                <a href="#">Acessórios</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </li>
+
+            <li>
+                <a href="sobre.html">Sobre</a>
+            </li>
+
+            <li>
+                <a href="contato.html">Contato</a>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+</html>
