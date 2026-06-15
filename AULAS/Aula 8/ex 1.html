@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+
+       
+        <title>exercicio implementação 3</title>
+        <meta charset="UTF-8">
+        
+
+        <style>
+            .menu-v {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 200px;
+                box-shadow: 2px 0 8px  rgba(0, 0, 0, 0.2);
+                background-color: #555966;
+            }
+
+            .menu-v li a {
+                display: block; 
+                padding: 16px 20px; 
+                color: #fafbff;
+                text-decoration: none; 
+                border-left: 4px solid transparent;
+                transition: all 0.3s;
+                
+            }
+            .menu-v li a:hover{
+                background: #175fcc;
+                border-left-color: #3b42a1;
+            }
+
+            .submenu {
+                display: none;
+                list-style-type: none;
+                position: absolute;
+                left: 205px;
+                top: 8px;
+                width: 200px;
+                background: #444;
+            }
+
+            .menu-v li:hover .submenu {
+                display: block;
+            }
+        
+
+            
+        </style>
+    </head>
+
+    <body>
+        <nav aria-label="menu lateral">
+            <ul class="menu-v">
+                <li>
+                    <a href="#">Menu</a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">Produtos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+    </body>
